@@ -14,6 +14,7 @@
 		0E5FACC21DB56465003E4736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5FACC01DB56465003E4736 /* LaunchScreen.storyboard */; };
 		0E5FACCD1DB56465003E4736 /* FetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FACCC1DB56465003E4736 /* FetchTests.swift */; };
 		0E5FACD81DB56465003E4736 /* FetchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FACD71DB56465003E4736 /* FetchUITests.swift */; };
+		0EADA7C61DB697F000D40B38 /* MojoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EADA7C51DB697F000D40B38 /* MojoTableViewController.swift */; };
 		2F0FE7E719ED31B2D09D46FB /* Pods_Fetch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25EB4C28FE34316448B4B92 /* Pods_Fetch.framework */; };
 		A052F8EDD4E7B84771E4AD92 /* Pods_FetchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E8A4646366A08ACB82E319 /* Pods_FetchTests.framework */; };
 		C690463DF2749A7CD69EB51B /* Pods_FetchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E895D2253805C2371C3BCC /* Pods_FetchUITests.framework */; };
@@ -50,6 +51,7 @@
 		0E5FACD31DB56465003E4736 /* FetchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5FACD71DB56465003E4736 /* FetchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUITests.swift; sourceTree = "<group>"; };
 		0E5FACD91DB56465003E4736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EADA7C51DB697F000D40B38 /* MojoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MojoTableViewController.swift; sourceTree = "<group>"; };
 		27D8D38F811D940C9B744FC1 /* Pods-FetchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FetchTests/Pods-FetchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		36105114CB8D6DBED9713AC0 /* Pods-Fetch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fetch/Pods-Fetch.release.xcconfig"; sourceTree = "<group>"; };
 		44D9672801915467D4F09B17 /* Pods-FetchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FetchUITests/Pods-FetchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				0E5FACB71DB56465003E4736 /* AppDelegate.swift */,
+				0EADA7C51DB697F000D40B38 /* MojoTableViewController.swift */,
 				0E5FACB91DB56465003E4736 /* ViewController.swift */,
 				0E5FACBB1DB56465003E4736 /* Main.storyboard */,
 				0E5FACBE1DB56465003E4736 /* Assets.xcassets */,
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E5FACBA1DB56465003E4736 /* ViewController.swift in Sources */,
+				0EADA7C61DB697F000D40B38 /* MojoTableViewController.swift in Sources */,
 				0E5FACB81DB56465003E4736 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
