@@ -1,17 +1,20 @@
 import UIKit
 import Alamofire
 
+
 class MojoTableViewController: UITableViewController {
-    var mojos: NSArray!
+    var mojos: Array<Mojo>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Alamofire.request("https://www.mojotech.com/people.json").responseJSON { response in
             if let json = response.result.value as! NSArray! {
-                print("JSON: \(json[0])")
+                self.mojos = json.map({ (element) -> Mojo in
+                    let mojoDictionary = element as! Dictionary<String, String>
 
-                self.mojos = json
+                    return Mojo(name: mojoDictionary["name"]!, json: mojoDictionary)!
+                })
                 
                 self.tableView.reloadData()
             }
@@ -32,9 +35,9 @@ class MojoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mojo", for: indexPath)
         
         if let mojos = self.mojos {
-            let mojo = mojos[indexPath.row] as! Dictionary<String, String>
+            let mojo = mojos[indexPath.row]
             
-            cell.textLabel?.text = mojo["name"]
+            cell.textLabel?.text = mojo.name
         }
 
         return cell
