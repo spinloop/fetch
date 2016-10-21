@@ -20,7 +20,7 @@ class SubmitViewController: UIViewController {
         
         print(params)
                 
-        Alamofire.request("http://localhost:3000/goats/new", parameters: params).responseJSON { response in
+        Alamofire.request("https://evening-wildwood-62806.herokuapp.com/goats/new", parameters: params).responseJSON { response in
             if let json = response.result.value {
                 print("JSON: \(json)")
             }
