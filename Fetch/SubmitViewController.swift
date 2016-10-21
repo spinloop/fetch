@@ -1,4 +1,5 @@
 import UIKit
+import Alamofire
 
 class SubmitViewController: UIViewController {
 
@@ -11,15 +12,19 @@ class SubmitViewController: UIViewController {
     }
     
     @IBAction func onSubmit(_ sender: AnyObject) {
-        let dictionary  = [
+        let params  = [
             "firstName": self.firstName.text!,
             "lastName": self.lastName.text!,
             "email": self.email.text!
         ]
         
-        print(dictionary)
-        
-        // TODO: post to api
+        print(params)
+                
+        Alamofire.request("https://evening-wildwood-62806.herokuapp.com/goats/new", parameters: params).responseJSON { response in
+            if let json = response.result.value {
+                print("JSON: \(json)")
+            }
+        }
     }
 
     /*
